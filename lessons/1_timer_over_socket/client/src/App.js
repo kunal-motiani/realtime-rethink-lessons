@@ -9,7 +9,7 @@ class App extends Component {
         <div className="App-header">
           <h2>Our awesome drawing app</h2>
         </div>
-        hello
+        Saying Hello
       </div>
     );
   }
