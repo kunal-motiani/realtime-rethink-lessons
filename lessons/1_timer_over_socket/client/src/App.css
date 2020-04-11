@@ -1,19 +1,60 @@
-html,body, #root { height: 100%; margin: 0px; padding: 0px; }
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
 
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
-
+@import url(https://fonts.googleapis.com/css?family=Roboto:400, 300, 500, 700);
 
 body {
   font-family: Roboto;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
+}
+
+.timer {
+  text-align: center;
+}
+
+button {
+  margin: auto;
+  text-align: center;
+  position: relative;
+  display: block;
+  height: 10vh;
+  width: 30vh;
+  background-color: blue;
+  color: #fff;
+  padding: 2vh;
+  border: 8px solid #000;
+  font-family: BioRhyme, serif;
+  font-size: 4vh;
+  line-height: 1vh;
+  cursor: pointer;
+}
+
+.players {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-gap: 50px;
+  align-items: center;
+  justify-content: center;
+  color: #444;
+  position: relative;
+}
+
+.player {
+  border-style: solid;
+  display: grid;
+  position: relative;
+  text-align: center;
 }
 
 * {
   box-sizing: border-box;
 }
-
-
 
 .App {
   text-align: left;
@@ -39,15 +80,15 @@ body {
 }
 
 .Drawing {
-   height: 100%;
+  height: 100%;
 }
 
 .Drawing-title {
-   font-size: 33px;
-   padding: 10px;
-   background-color: #444;
-   color: #fff;
-   font-weight: 100;
+  font-size: 33px;
+  padding: 10px;
+  background-color: #444;
+  color: #fff;
+  font-weight: 100;
 }
 
 .Form {
@@ -86,7 +127,6 @@ body {
   padding-left: 0px;
 }
 
-
 .DrawingList-item {
   list-style: none;
   padding-top: 15px;
@@ -95,9 +135,6 @@ body {
   padding-right: 20px;
   border-bottom: solid 1px #eee;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .DrawingList-item:hover {
@@ -106,7 +143,7 @@ body {
 
 .DrawingList-item:active {
   background-color: #ddd;
-  box-shadow: inset 0 0 3px rgba(0,0,0, 0.6);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.6);
 }
 
 .DrawingList-item:last-child {
@@ -121,7 +158,7 @@ body {
 }
 
 .Connection-port {
-  background-color:#fff;
+  background-color: #fff;
   padding: 10px;
   font-size: 20px;
 }
